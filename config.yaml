@@ -1,0 +1,15 @@
+# Configuration file for Hi-C processing pipeline
+
+# List of data files (replace "file1", "file2", etc., with your actual filenameprefix)
+data:   -file1
+	-file2
+# Add more files as needed
+
+# Genome name
+genome: genome  # Replace "genome" with the prefix of the actually used genome (i.E. hg19 if your file is called "hg19.fasta.gz")
+
+# User guide for naming convention of reads:
+#   The pipeline expects read files to be named as "{file}_R1_001.fastq.gz" for Read 1
+#   and "{file}_R2_001.fastq.gz" for Read 2, where "{file}" corresponds to each item in the data list.
+#   Example: If your data list includes "file1" and "file2", you should have corresponding read files
+#   named "file1_R1_001.fastq.gz", "file1_R2_001.fastq.gz", "file2_R1_001.fastq.gz", "file2_R2_001.fastq.gz", etc.
